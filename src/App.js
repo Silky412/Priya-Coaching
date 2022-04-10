@@ -8,8 +8,12 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <div style={{margin:'10px'}}>
-          <Card/>
+        <div className='cardContainer'>
+          <Card name='deepak' sName='sharma'/>
+          <Card name='priya' sName='sharm'/>
+          <Card name='tanish' sName='shar'/>
+          <Card name='tamanna' sName='sha'/>
+          <Card name='laksh' sName='sh'/>
         </div>
     </div>
   );
