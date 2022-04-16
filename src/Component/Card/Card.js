@@ -14,8 +14,10 @@ function Card(props) {
       <MUICard raised sx={{width:345, minHeight:270, margin: '10px'}}>
         {a}
         <br/>
-        <button className='btn btn-secondary' onClick={()=>{handleClick()}}>update</button>
+        <button className='btn btn-secondary' onClick={()=>{handleClick();props.abc(a)}}>update</button>
         <h1>{props.name}</h1>
+        <h1>{props.sName}</h1>
+        {props.children}
       </MUICard>
   )
 }
