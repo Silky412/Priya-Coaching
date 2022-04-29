@@ -6,17 +6,17 @@ function Card(props) {
   const [a,setA] = useState(15)
   let b = 15
   const {name, sName} = props
-  console.log(name,sName)
   const handleClick = ()=>{
       setA(a+1)
   }
   return (
       <MUICard raised sx={{width:345, minHeight:270, margin: '10px'}}>
-        {a}
+        <img src={props.image}/>
+        {/* {a}
         <br/>
         <button className='btn btn-secondary' onClick={()=>{handleClick();props.abc(a)}}>update</button>
         <h1>{props.name}</h1>
-        <h1>{props.sName}</h1>
+        <h1>{props.sName}</h1> */}
         {props.children}
       </MUICard>
   )
